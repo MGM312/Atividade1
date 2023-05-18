@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loader</title>
+  <style>
+    /* Estilos para o loader */
+    .loader {
+      display: show;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+      text-align: center;
+      padding-top: 50vh;
+      color: white;
+      font-size: 24px;
+    }
+  </style>
+  <script>
+    // Função para exibir e ocultar o loader
+    // Simular um tempo de carregamento
+    // Oculta o loader após o tempo definido
+    
+    //function loadada_bala(){ //Se quiser testar com essa função, é só alterar o body para <body onload = loadada_bala()> e comentar o document.addEvent...
+    //  x = setTimeout(mataoload, 1000);
+    //}
+    function mataoload(){
+      document.getElementById('load').style.display = 'none'
+    }
+    //Ta funcionando, eu mudei o default da classe .loader para display:show.
+    document.addEventListener('DOMContentLoaded', mataoload);
+    </script>
+</head>
+<body>
+  <div class="loader" id = 'load'>Carregando...</div>
+  <h1>URI Santiago</h1>
+  <p>Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mim que vai caçá sua turmis!Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!Quem num gosta di mé, boa gentis num é.Copo furadis é disculpa de bebadis, arcu quam euismod magna.</p>  
+</body>
+</html>

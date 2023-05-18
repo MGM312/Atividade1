@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora</title>
+  <script>
+    function calcular(operacao) {
+      //criar o que for preciso para realizar as 4 operacoes matematicas e entao setar o valor no paragrafo de id = resultado.
+      switch(operacao){
+        case 0:
+          var x = document.getElementById('numero1').value;
+          var y = document.getElementById('numero2').value;
+          console.log(x,y)
+          x = Number(x)+Number(y)
+          document.getElementById('resultado').innerHTML = (x)
+          break;
+        case 1:
+          var x = document.getElementById('numero1').value;
+          var y = document.getElementById('numero2').value;
+          console.log(x,y)
+          x = Number(x)-Number(y)
+          document.getElementById('resultado').innerHTML = (x)
+          break;
+        case 2:
+          var x = document.getElementById('numero1').value;
+          var y = document.getElementById('numero2').value;
+          console.log(x,y)
+          x = Number(x)*Number(y)
+          document.getElementById('resultado').innerHTML = (x)
+          break;
+        case 3:
+          var x = document.getElementById('numero1').value;
+          var y = document.getElementById('numero2').value;
+          console.log(x,y)
+          x = Number(x)/Number(y)
+          document.getElementById('resultado').innerHTML = (x)
+          break;
+      }
+
+    }
+  </script>
+</head>
+<body>
+  <h1>Calculadora</h1>
+  <form>
+    <label for="numero1">Número 1:</label>
+    <input type="number" id="numero1" required>
+    <br>
+    <label for="numero2">Número 2:</label>
+    <input type="number" id="numero2" required>
+    <br>
+    <button type="button" onclick="calcular(0)">Adição</button>
+    <button type="button" onclick="calcular(1)">Subtração</button>
+    <button type="button" onclick="calcular(2)">Multiplicação</button>
+    <button type="button" onclick="calcular(3)">Divisão</button>
+  </form>
+  <p id="resultado"></p>
+</body>
+</html>

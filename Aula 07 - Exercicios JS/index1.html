@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de Mudança de Cor</title>
+  <style>
+    body {
+      background-color: #e0e0e0;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #333333;
+    }
+    p {
+      color: #666666;
+    }
+  </style>
+  <script>
+    function changeBackgroundColor() {
+      //criar a logica para mudança de cor do background do site inteiro
+      document.getElementById('idbody').style.backgroundColor='yellow'
+    }
+  </script>
+</head>
+<body id="idbody">
+  <h1>Exemplo de Mudança de Cor</h1>
+  <p>Esta é uma descrição simples.</p>
+  <button onclick="changeBackgroundColor()">Trocar Cor</button>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulário de Cadastro</title>
+  <style>
+    body {
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+  <script>
+    function mostrarDados() {
+      //implementar a logica aqui
+      var nome = document.getElementById('nome').value;
+      var sobrenome = document.getElementById('sobrenome').value;
+      var logradouro = document.getElementById('logradouro').value;
+      var endereco = document.getElementById('endereco').value;
+      var numero = document.getElementById('numero').value;
+      var cep = document.getElementById('cep').value;
+      console.log(nome, sobrenome, logradouro, endereco, numero, cep)
+      alert("Nome: "+ nome +"\nSobrenome: " + sobrenome +"\nLogradouro: " + logradouro + "\nEndereço: " + endereco + "\nNumero: " + numero + "\nCEP: " + cep)
+    }
+  </script>
+</head>
+<body>
+  <h1>Formulário de Cadastro</h1>
+  <form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" required>
+    <br>
+    <label for="sobrenome">Sobrenome:</label>
+    <input type="text" id="sobrenome" required>
+    <br>
+    <label for="logradouro">Logradouro:</label>
+    <select id="logradouro" required>
+      <option value="">Selecione</option>
+      <option value="Rua">Rua</option>
+      <option value="Avenida">Avenida</option>
+    </select>
+    <br>
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereco" required>
+    <br>
+    <label for="numero">Número:</label>
+    <input type="text" id="numero" required>
+    <br>
+    <label for="cep">CEP:</label>
+    <input type="text" id="cep" required>
+    <br>
+    <button type="button" onclick="mostrarDados()">Mostrar Dados</button>
+  </form>
+</body>
+</html>
